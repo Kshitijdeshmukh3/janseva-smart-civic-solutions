@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JANSEVA – SMART CIVIC SOLUTIONS
 
 > **"Your Area. Your Voice. Our Responsibility."**
@@ -80,3 +81,7 @@ In accordance with the **Digital Personal Data Protection Act (DPDPA), 2023**:
 ## 📄 License & Delivery
 Engineered for municipal corporations, nagar parishads, and smart city development authorities.
 All rights reserved © 2026 JANSEVA.
+=======
+# janseva-smart-civic-solutions
+Smart Civic Solutions Platform
+>>>>>>> 801620cd237bd8aed893d2764e59fe01e79c98df
