@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#6739E8"/>
+      <stop offset="100%" stop-color="#4C1D95"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2A93B"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#6739E8" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="128" fill="#17152B"/>
+  <rect x="16" y="16" width="480" height="480" rx="112" stroke="url(#primaryGrad)" stroke-width="4" stroke-opacity="0.4"/>
+  <path d="M256 64L416 136V280C416 380 256 448 256 448C256 448 96 380 96 280V136L256 64Z" fill="url(#primaryGrad)" filter="url(#glow)"/>
+  <path d="M256 128L368 180V270C368 335 256 388 256 388V128Z" fill="#FFFFFF" fill-opacity="0.12"/>
+  <circle cx="256" cy="248" r="68" stroke="#FFFFFF" stroke-width="8" fill="none" opacity="0.95"/>
+  <circle cx="256" cy="248" r="24" fill="#FFFFFF"/>
+  <circle cx="256" cy="248" r="10" fill="#6739E8"/>
+  <g stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.85">
+    <line x1="256" y1="184" x2="256" y2="208"/>
+    <line x1="256" y1="288" x2="256" y2="312"/>
+    <line x1="192" y1="248" x2="216" y2="248"/>
+    <line x1="296" y1="248" x2="320" y2="248"/>
+    <line x1="210" y1="202" x2="228" y2="220"/>
+    <line x1="284" y1="276" x2="302" y2="294"/>
+    <line x1="302" y1="202" x2="284" y2="220"/>
+    <line x1="228" y1="276" x2="210" y2="294"/>
+  </g>
+  <path d="M200 370C215 350 240 340 256 340C272 340 297 350 312 370C292 390 274 402 256 408C238 402 220 390 200 370Z" fill="url(#accentGrad)"/>
+</svg>

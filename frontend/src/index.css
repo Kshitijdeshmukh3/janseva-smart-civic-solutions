@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply font-sans bg-surface-bg text-content-main antialiased selection:bg-brand-600 selection:text-white;
+  }
+}
+
+/* XINTRA Theme Gradients & Surfaces */
+.xintra-gradient {
+  background: linear-gradient(135deg, #17152B 0%, #2E1282 50%, #6739E8 100%);
+}
+
+.xintra-gradient-card {
+  background: linear-gradient(135deg, #6739E8 0%, #8B5CF6 100%);
+}
+
+.civic-gradient {
+  background: linear-gradient(135deg, #17152B 0%, #2A1F52 50%, #6739E8 100%);
+}
+
+.hero-pattern {
+  background-color: #17152B;
+  background-image: radial-gradient(rgba(139, 92, 246, 0.2) 1.5px, transparent 0);
+  background-size: 28px 28px;
+}
+
+.light-grid-pattern {
+  background-color: #F7F7FC;
+  background-image: radial-gradient(rgba(103, 57, 232, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid #ECECF6;
+}
+
+.glass-sidebar {
+  background: #17152B;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F7FC;
+}
+::-webkit-scrollbar-thumb {
+  background: #D0B8FB;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B5CF6;
+}
+
+/* Smooth Transitions */
+.transition-smooth {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}

@@ -1,0 +1,28 @@
+services:
+  # Python FastAPI Backend
+  - type: web
+    name: janseva-backend
+    env: python
+    region: singapore
+    plan: standard
+    buildCommand: "cd backend && pip install -r requirements.txt"
+    startCommand: "cd backend && python seed_data.py && uvicorn app.main:app --host 0.0.0.0 --port $PORT --workers 4"
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: PROJECT_NAME
+        value: "JANSEVA – SMART CIVIC SOLUTIONS"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: janseva-mysql
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: BACKEND_CORS_ORIGINS
+        value: '["https://janseva.vercel.app", "http://localhost:3000"]'
+
+databases:
+  - name: janseva-mysql
+    databaseName: janseva_db
+    user: janseva_admin
+    region: singapore
+    plan: standard

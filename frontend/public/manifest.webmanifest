@@ -1,0 +1,65 @@
+{
+  "name": "JANSEVA – Smart Civic Solutions",
+  "short_name": "JANSEVA",
+  "description": "Enterprise Smart Municipal Governance, Citizen Engagement, Complaint Management & Area Development Platform.",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "background_color": "#F7F7FC",
+  "theme_color": "#6739E8",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["government", "productivity", "utilities", "social"],
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Report Problem",
+      "short_name": "Report",
+      "description": "Submit a new geotagged civic grievance",
+      "url": "/report",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Track Grievance",
+      "short_name": "Track",
+      "description": "Check real-time status of submitted complaint",
+      "url": "/track",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Welfare Schemes",
+      "short_name": "Schemes",
+      "description": "Browse central, state and municipal citizen schemes",
+      "url": "/schemes",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Ward Projects",
+      "short_name": "Projects",
+      "description": "Inspect public development budgets and milestones",
+      "url": "/projects",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    }
+  ]
+}
